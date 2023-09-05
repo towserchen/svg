@@ -5,7 +5,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('preline/plugin'),
+    require('flowbite/plugin'),
   ],
 }
 
