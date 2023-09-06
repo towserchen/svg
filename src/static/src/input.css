@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+.max-image {
+    width: 100%;
+}
+
+.title-container {
+    
+    text-align: center;
+    color: white; /* Text color for the title */
+    padding: 10px; /* Adjust padding for spacing */
+  }
