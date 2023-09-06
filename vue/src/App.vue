@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-  <title>Your mom</title>
-</head>
-<body class="bg-yellow-900">
+<template>
     <!-- Navigation bar -->
     <nav class="bg-white border-gray-200">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -156,5 +145,37 @@
     </div>
     </div>
     <!-- Yoink, no more restarunt too-->
-</body>
-</html>
+</template>
+
+<script>
+// import HelloWorld from './components/HelloWorld.vue'
+
+// export default {
+//   name: 'App',
+//   components: {
+//     HelloWorld
+//   }
+// }
+
+export default {
+  // Your component's JavaScript code here
+  mounted() {
+    // Include the external JavaScript files here
+    const tailwindScript = document.createElement('script');
+    tailwindScript.src = 'https://cdn.tailwindcss.com';
+    document.body.appendChild(tailwindScript);
+
+    const flowbiteScript = document.createElement('script');
+    flowbiteScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js';
+    document.body.appendChild(flowbiteScript);
+
+    const tailwindCSS = document.createElement('script');
+    tailwindCSS.src = 'https://cdn.tailwindcss.com';
+    document.body.appendChild(tailwindCSS)
+  }
+};
+</script>
+
+<style>
+@import url('/dist/output.css')
+</style>
