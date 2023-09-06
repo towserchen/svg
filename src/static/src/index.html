@@ -8,10 +8,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <title>Landing Page</title>
 </head>
 
-<body class="bg-yellow-900" style="display: flex; flex-direction: column;">
+<body class="bg-slate-100" style="display: flex; flex-direction: column;">
   <!-- Navigation bar -->
   <nav class="bg-white border-gray-200">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -70,21 +71,22 @@
   </nav>
   <!-- No more nav bar, boi! -->
 
-  <!-- Giant ass img -->
+  <!-- banner -->
   <nav>
     <div class="relative bg-fixed">
-      <a href="#"><img src="https://images2.alphacoders.com/108/1081300.png" alt="Big img"></a>
+      <img src="bg.jpg" alt="Big img" style="width: 100%">
+
       <div class="absolute inset-0 flex items-center justify-center">
         <div class="bg-black bg-opacity-50 p-2 rounded-lg hover:bg-opacity-70 transition-all duration-300 ease-in-out">
           <section class="slider">
             <a href="#"
-              class="inline-block rounded-md border border-transparent text-white hover:text-gray-950">Reservation</a>
+              class="inline-block rounded-md border border-transparent text-white hover:text-gray-950 pr-4 text-gray-900">Reservation</a>
           </section>
         </div>
       </div>
     </div>
   </nav>
-  <!-- no more giant ass img -->
+  <!-- no more banner -->
 
   <!-- Restaurant showcase -->
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto relative">
@@ -192,23 +194,8 @@
 
 
   <!-- bottom navigation bar-->
-  <div class="row footer" style="position: relative; left: 47%; bottom: 5%; top: auto">
-    <ul class="col-md-6">
-      <!-- terms -->
-      <li style="display: inline-block; margin-right: 20px;">
-        <a href="./terms.html">Terms</a>
-      </li>
-
-      <!-- AboutUs-->
-      <li style="display: inline-block">
-        <a href="./aboutUs.html">About Us</a>
-      </li>
-    </ul>
-  </div>
-
-  <!-- bottom navigation bar-->
-  <div class="row" style="position:absolute; left: 47%; top: 95%">
-    <ul class="col-md-6">
+  <div class="row footer" style="text-align: center;">
+    <ul class="col-md-6 p-5">
       <!-- terms -->
       <li style="display: inline-block; margin-right: 20px;">
         <a href="./terms.html">Terms</a>
