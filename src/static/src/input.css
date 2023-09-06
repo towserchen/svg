@@ -16,3 +16,10 @@
     color: white; /* Text color for the title */
     padding: 10px; /* Adjust padding for spacing */
   }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
