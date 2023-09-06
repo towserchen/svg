@@ -1,17 +1,22 @@
-# vue
-# svg-front
+## SVG-FRONT (Vue) 
 
 ## Project setup
 ```
 npm install
 ```
 
+## Install depedency
+```
+npm install -g @vue/cli
+npm install flowbite flowbite-vue tailwindcss@latest postcss@latest autoprefixer@latest
+```
 ### Compiles and hot-reloads for development
+Which mean it will automatically reload everytime something change in the code
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compiles for production
 ```
 npm run build
 ```
