@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create Account Form</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  </head>
+  <!-- So its in the middle-->
+  <body class="bg-white h-screen flex justify-center items-center"> <!-- Changed to white background -->
+
+    <!-- Size of the card -->
+    <div class="w-full max-w-xl p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8">
+        <form class="space-y-6" action="#">
+
+            <!-- Title -->
+            <h5 class="text-xl font-medium text-gray-900">Create Account</h5>
+
+            <!-- Email & Password -->
+            <div class="flex space-x-4">
+                <div class="w-1/2">
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email:</label>
+                    <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="name@email.com*" required>
+                </div>
+                <div class="w-1/2">
+                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="*******" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                </div>
+            </div>
+            
+             <!-- Required Info -->
+            <div>
+                <label for="phonenumber" class="block mb-2 text-sm font-medium text-gray-900">Primary Mobile Number:</label>
+                <input type="phonenumber" name="phonenumber" id="phonenumber" placeholder="Phone Number*" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+            </div>
+
+            <!-- Second Number -->
+            <div>
+                <label for="phonenumber" class="block mb-2 text-sm font-medium text-gray-900">Secondary Phone Number (Optional):</label>
+                <input type="phonenumber" name="phonenumber" id="phonenumber" placeholder="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+            </div>
+
+            <!-- Location -->
+            <div>
+                <label for="address" class="block mb-2 text-sm font-medium text-gray-900">Address (optional):</label>
+                <input type="address" name="address" id="address" placeholder="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+            </div>
+
+
+            <div class="flex space-x-4">
+                <div class="w-1/2">
+                    <label for="postcode" class="block mb-2 text-sm font-medium text-gray-900">Post Code:</label>
+                    <input type="postcode" name="postcode" id="postcode" placeholder="Post Code*" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                </div>
+
+                <div class="w-1/2">
+                    <label for="state" class="block mb-2 text-sm font-medium text-gray-900">State:</label>
+                    <select name="state" id="state" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                        <option value="" disabled selected>Select your State</option>
+                        <option value="SA">South Australia</option>
+                        <option value="WA">Western Australia</option>
+                        <option value="VIC">Victoria</option>
+                        <option value="NSW">New South Wales</option>
+                        <option value="TAS">Tasmania</option>
+                        <option value="QL">Queensland</option>
+                        <!-- Add all other states here -->
+                    </select>
+                </div>
+            
+            </div>
+
+            
+            <div class="flex items-start">
+                <div class="flex items-start">
+                    <div class="flex items-center h-5">
+                        <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300" required>
+                    </div>
+                    <label for="remember" class="ml-2 text-sm font-medium text-gray-900">Remember me</label>
+                </div>
+                
+            </div>
+            
+            <button type="submit" <a href="../index.html" class="w-full pb-5 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center" >Create New Account</button>
+            <br>
+            <button type="submit" class="w-full pb-4 text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Continue as Guest</button>
+
+        </form>
+    </div>
+
+</body>
+</html>

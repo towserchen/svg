@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link href="input.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  <title>Restaurant Name</title>
+</head>
+
+<body class="bg-slate-100">
+  <!-- Navigation bar -->
+  <nav class="bg-white border-gray-200">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <!-- Logo -->
+      <a href="#" class="flex items-center">
+        <span class="text-2-1 ">
+          <img class="h-10 inline"
+            src="https://images.creativemarket.com/0.1.0/ps/7262394/1820/1214/m1/fpnw/wm0/dining-restaurant-logo-design-inspiration-.jpg?1573169154&s=f5468f33601a341466e0fb5dc1da8c4d">
+          SVG
+        </span>
+      </a>
+      <!-- Hamberger menu -->
+      <div class="flex md:order-2">
+        <button type="button"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Login <span aria-hidden="true">&rarr;</span>
+        </button>
+        <button data-collapse-toggle="navbar-cta" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+          aria-controls="navbar-cta" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <!-- The button in the middle -->
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+        <ul
+          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
+          <li>
+            <a href="index.html"
+              class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="Menu.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Menu</a>
+          </li>
+
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">STH</a>
+          </li>
+
+          <li>
+            <a href="ReservationPage.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Book
+              a reservation</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- No more nav bar, boi! -->
+
+  <!-- Giant ass img -->
+  <nav>
+    <div class="relative bg-fixed">
+
+      <!-- The Main Image-->
+      <div class="max-image" style="position: relative; display: inline-block;">
+        <img class="max-image" src="https://i.pinimg.com/originals/3f/a4/59/3fa4594ff2fca7baeb4163c161cfa348.jpg">
+        <div
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
+        </div>
+
+        <div class="title-container" style=" position: absolute; width: 100%; top: 200px; left: 0px;">
+          <H2 class="font-serif" style="text-align: center; font-size: xxx-large;">This is the title</H2>
+          <p class="font-serif" style="text-align: center; font-size: large; color:LightGray;">This is the des This is
+            the des This is the des This is the des </p>
+        </div>
+
+      </div>
+
+      <div class="absolute inset-0 flex pt-80 items-center justify-center">
+        <div
+          class="bg-orange-300 bg-opacity-50 p-4 rounded-lg hover:bg-opacity-70 transition-all duration-300 ease-in-out">
+          <section class="slider">
+            <a href="ReservationPage.html"
+              class="inline-black rounded-md border border-transparent text-white hover:text-gray-950"
+              style="font-size:x-large">Make Reservation</a>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- no more giant ass img -->
+
+  <!-- Restaurant showcase -->
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto relative">
+    <!-- Title -->
+    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+      <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Hot-Selling Dishes</h2>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">Name-Des</p>
+    </div>
+    <!-- End Title -->
+
+    <!-- Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- First Food -->
+      <a class="group rounded-xl overflow-hidden" href="#">
+        <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
+          <img
+            class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
+            src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?cs=srgb&dl=pexels-ella-olsson-1640772.jpg&fm=jpg"
+            alt="Bamboo leaf restarunt">
+        </div>
+
+        <div class="mt-7">
+          <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-200">
+            <!-- Title -->
+            Food One
+          </h3>
+          <p class="mt-3 text-gray-800 dark:text-gray-200">
+            Food One
+          </p>
+          <p
+            class="mt-5 inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 group-hover:underline font-medium">
+            Detail Info
+            <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </p>
+        </div>
+      </a>
+      <!-- End eat -->
+
+      <!-- Second restarunt -->
+      <a class="group rounded-xl overflow-hidden" href="#">
+        <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
+          <img
+            class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
+            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80"
+            alt="La Oeste De La Mar">
+        </div>
+
+        <div class="mt-7">
+          <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-200">
+            <!-- Title -->
+            Food Two
+          </h3>
+          <p class="mt-3 text-gray-800 dark:text-gray-200">
+            Food Two des
+          </p>
+          <p
+            class="mt-5 inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 group-hover:underline font-medium">
+            Detail Info
+            <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </p>
+        </div>
+      </a>
+      <!-- End eat -->
+
+      <!-- Third restarunt -->
+      <a class="group rounded-xl overflow-hidden" href="#">
+        <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
+          <img
+            class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9t9xOYc_56W7vQjSkgkqqLbXA4HmGsLqK2Q&usqp=CAU"
+            alt="Mexikana">
+        </div>
+
+        <div class="mt-7">
+          <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-200">
+            <!-- Title -->
+            Food three
+          </h3>
+          <p class="mt-3 text-gray-800 dark:text-gray-200">
+            Food three des
+          </p>
+          <p
+            class="mt-5 inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 group-hover:underline font-medium">
+            Detail Info
+            <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </p>
+        </div>
+      </a>
+      <!-- End eat -->
+    </div>
+  </div>
+  <!-- Yoink, no more restarunt too-->
+
+  <!-- bottom navigation bar-->
+  <div class="row footer" style="position: relative; left: 47%; bottom: 5%; top: auto">
+    <ul class="col-md-6">
+      <!-- terms -->
+      <li style="display: inline-block; margin-right: 20px;">
+        <a href="./terms.html">Terms</a>
+      </li>
+
+      <!-- AboutUs-->
+      <li style="display: inline-block">
+        <a href="./aboutUs.html">About Us</a>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
