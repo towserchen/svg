@@ -28,9 +28,9 @@ loginForm.addEventListener('submit', async (event) => {
 
         if (data.status === 1) {
         // Login was successful
-        console.log('Login successful:', data.msg);
         // Tell user
         alert("Login successfully!")
+        location.href = '/';
 
         } else {
         // Login failed
@@ -43,6 +43,6 @@ loginForm.addEventListener('submit', async (event) => {
         console.error('HTTP request failed with status:', response.status);
     }
     } catch (error) {
-    console.error('Error:', error);
+        console.error('Error:', error);
     }
 });
