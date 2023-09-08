@@ -8,6 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
   </head>
   <!-- So its in the middle-->
   <body class="bg-white h-screen flex justify-center items-center"> <!-- Changed to white background -->
@@ -20,56 +22,19 @@
             <h5 class="text-xl font-medium text-gray-900">Create Account</h5>
 
             <!-- Email & Password -->
-            <div class="flex space-x-4">
-                <div class="w-1/2">
+            <div class="block">
+                <div class="block mb-5">
                     <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email:</label>
-                    <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="name@email.com*" required>
+                    <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Please input your email address" required>
                 </div>
-                <div class="w-1/2">
+                <div class="block mb-5">
                     <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Password:</label>
-                    <input type="password" name="password" id="password" placeholder="*******" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                    <input type="password" name="password" id="password" placeholder="Please input your password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                 </div>
-            </div>
-            
-             <!-- Required Info -->
-            <div>
-                <label for="phonenumber" class="block mb-2 text-sm font-medium text-gray-900">Primary Mobile Number:</label>
-                <input type="phonenumber" name="phonenumber" id="phonenumber" placeholder="Phone Number*" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
-            </div>
-
-            <!-- Second Number -->
-            <div>
-                <label for="phonenumber" class="block mb-2 text-sm font-medium text-gray-900">Secondary Phone Number (Optional):</label>
-                <input type="phonenumber" name="phonenumber" id="phonenumber" placeholder="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
-            </div>
-
-            <!-- Location -->
-            <div>
-                <label for="address" class="block mb-2 text-sm font-medium text-gray-900">Address (optional):</label>
-                <input type="address" name="address" id="address" placeholder="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
-            </div>
-
-
-            <div class="flex space-x-4">
-                <div class="w-1/2">
-                    <label for="postcode" class="block mb-2 text-sm font-medium text-gray-900">Post Code:</label>
-                    <input type="postcode" name="postcode" id="postcode" placeholder="Post Code*" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                <div class="block">
+                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Confirm Password:</label>
+                    <input type="password" name="re_password" id="password" placeholder="Please input your password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
                 </div>
-
-                <div class="w-1/2">
-                    <label for="state" class="block mb-2 text-sm font-medium text-gray-900">State:</label>
-                    <select name="state" id="state" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
-                        <option value="" disabled selected>Select your State</option>
-                        <option value="SA">South Australia</option>
-                        <option value="WA">Western Australia</option>
-                        <option value="VIC">Victoria</option>
-                        <option value="NSW">New South Wales</option>
-                        <option value="TAS">Tasmania</option>
-                        <option value="QL">Queensland</option>
-                        <!-- Add all other states here -->
-                    </select>
-                </div>
-            
             </div>
 
             
@@ -83,12 +48,48 @@
                 
             </div>
             
-            <button type="submit" <a href="../index.html" class="w-full pb-5 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center" >Create New Account</button>
-            <br>
-            <button type="submit" class="w-full pb-4 text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Continue as Guest</button>
+            <a href="#" class="w-full block pb-5 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center reg" >Create New Account</a>
+
+            <a href="/" class="w-full block pb-4 text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Continue as Guest</a>
 
         </form>
     </div>
+
+    <script>
+        $('.reg').click(function(){
+            let email = $('[name=email]').val();
+            let password = $('[name=password]').val();
+            let rePassword = $('[name=re_password]').val();
+
+            console.log(email);
+
+            if (email.length <= 0
+                || password.length <= 0
+                || rePassword.length <= 0) {
+                    alert('Please input email, password and confirm password');
+                    return false;
+                }
+
+            if (password != rePassword) {
+                alert('Password and confirm password are not same');
+                return false;
+            }
+
+            $.post('https://api.ddos.la/user/register', {
+                email: email,
+                password: password,
+                re_password: rePassword
+            }, data=>{
+                if (data.status == 0) {
+                    alert(data.msg);
+                    return fase;
+                }
+
+                alert('Congratulation! Registered successfully!');
+                location.href = '/';
+            }, 'json');
+        })
+    </script>
 
 </body>
 </html>
