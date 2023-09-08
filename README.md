@@ -16,9 +16,11 @@ NodeJS 18 or above
 ### Install
 
 1. Install http-server
+
 `npm install -g http-server`
 
 2. Enter the root folder of this project and run the command
+
 `http-server ./src -o`
 
 ## Contributor
