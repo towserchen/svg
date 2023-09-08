@@ -7,6 +7,20 @@ The online demo always fetch from the latest version of branch master.
 
 https://unisa.ddos.la
 
+## Run on your computer
+
+### Environment Requirement
+
+NodeJS 18 or above
+
+### Install
+
+1. Install http-server
+`npm install -g http-server`
+
+2. Enter the root folder of this project and run the command
+`http-server ./src -o`
+
 ## Contributor
 
 + towserchen - Long Chen
