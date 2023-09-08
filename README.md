@@ -3,7 +3,7 @@
 Static pages for SVG system.
 
 ## Online Demo
-The online demo always fetch from the latest version of branch main.
+The online demo always fetch from the latest version of branch master.
 
 https://unisa.ddos.la
 
